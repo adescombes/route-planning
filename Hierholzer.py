@@ -52,7 +52,7 @@ def printCircuit(adj):
 
             # if the current path is long enough (more than 2 vertices visited),
             # and the previous-previous vertex is among the choices,
-            # do not consider this option (to avoid 180° turns).
+            # do not consider this option (to avoid 180 turns).
             # There must be more than 1 choice
             if (len(curr_path) > 2) & (len(next_v_choices)>1):
                 for v in next_v_choices:
